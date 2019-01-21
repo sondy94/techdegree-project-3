@@ -1,0 +1,183 @@
+/*Base Style*/
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	line-height: 1.5;
+}
+
+
+
+/*Mobile Version*/
+
+body {
+	background-color: #2F4F4F;
+	font-family: 'Merriweather', serif;
+	color: grey;
+
+}
+
+
+.wrapper { 
+background-color: white;
+margin: 0 3em;
+}
+
+
+
+.container {
+	padding: 0 1.2em;
+}
+
+/*-----header------*/
+
+
+.header_title {
+	background-color: #000;
+	text-align: center;
+	color:#fff;
+	padding: 1.5em;
+	font-size: 1.1em;
+	width:100%;
+	letter-spacing: 0.1em;
+}
+
+/*-----Main Section-----*/
+
+main {
+	text-align: center;
+	padding-top: 1.2em;
+	border-bottom: 4px solid #000;
+	padding-bottom: 1.1em;
+
+}
+
+.main-title {
+	color: #000;
+	line-height: 1.8;
+}
+
+/*------Contact Information----*/
+
+.contact_info {
+	border-top: 2px solid #000;
+	padding-top: 1.1em;
+	margin-top: 0.2em;
+
+}
+
+legend {
+
+   font-weight: 700;
+   font-size: 1.2em;
+   color: #000;
+   margin-bottom: 0.5em;
+
+}
+
+
+fieldset {
+	border:none;
+
+}
+
+
+input::placeholder {
+text-align: right;
+font-style: italic;
+
+}
+
+input[type="tel"],
+[type="text"],
+[type="email"],
+[type="submit"], select,
+textarea {
+	background-color: lightgrey;
+   font-size: .9rem;
+   height: 3em;
+   margin: 10px 0 30px;
+   outline: 0;
+   padding: 10px;
+   width: 100%;
+   background-color: #eff0f1;
+   border-radius: 7px;
+   box-shadow: inset 1px 1px 1px lightgrey;
+   
+}
+
+input:focus,
+textarea:focus {
+   color: #000;
+   background-color: #597ba0;
+    transition: background 1s, color .5s;
+}
+
+
+    /*Newsletter*/
+
+
+     .news-info {
+    	border-top: 2px solid #000;
+    	padding-top: 2em;
+    	}
+
+    input[type="radio"],
+input[type="checkbox"] {
+  margin: 16px 14px 0;
+}
+
+fieldset:nth-of-type(2) label{
+   margin-top: 24px;
+}
+
+p{
+	padding-top:15px;
+}
+label[for="topics"]{
+	margin-top: 50px;
+}
+
+    #topics {
+    	height: 70px;
+    }
+
+    button[type="submit"] {
+    	background-color: blue;
+    	height:4em;
+    	color: #fff;
+    	font-weight: 600;
+    }
+
+
+/*Footer*/
+
+footer {
+	text-align: center;
+	margin-top: 0.8em;
+	font-style: italic;
+}
+
+@media (min-width: 768px) {
+
+   fieldset:first-of-type label {
+     display: inline-block;
+     width: 25%;
+ }
+
+ input[type="text"],
+input[type="email"],
+input[type="tel"],
+ select {
+  
+  display: inline-block;
+    width: 74%;
+    
+}
+
+    input[id="zip_code"] {
+    width: 30%;
+}
+
+}
